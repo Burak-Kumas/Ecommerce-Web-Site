@@ -176,6 +176,7 @@ section {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
+
 .row {
   position: relative;
   transition: all 0.4s;
@@ -224,7 +225,6 @@ section {
 }
 
 /* Client Reviews Section */
-
 .client-reviews {
   background-color: #f3f4f6;
 }
@@ -250,4 +250,116 @@ section {
   font-weight: 400;
   text-transform: var(--text-transform-capitalize);
   margin-bottom: 2px;
+}
+
+/* Blog Section */
+.blog-center-text {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.update-blog {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+}
+
+.update-blog img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.blog h5 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.blog h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.blog p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: gray;
+}
+/* Contact Section */
+.contact {
+  background-color: #f3f4f6;
+}
+
+.contact-info {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(22%, auto));
+}
+.contact-info h4 {
+  text-transform: uppercase;
+}
+.contact-info p {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: 1.5;
+  margin-bottom: 7px;
+}
+.contact-info p:hover {
+  color: var(--color-secondary);
+}
+.first-info img {
+  width: 140px;
+  height: auto;
+}
+.social-icon i {
+  color: gray;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.social-icon i:hover {
+  color: var(--color-secondary);
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 890px) {
+  header {
+    padding: 20px 3%;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 630px) {
+  .main-text h1 {
+    font-size: 50px;
+    transition: 0.4s;
+  }
+  .main-text p {
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  .main-btn {
+    padding: 10px 20px;
+    transition: 0.4s;
+  }
+}
+@media (max-width: 750px) {
+  .navmenu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 130vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 30px;
+  }
+  .navmenu a {
+    display: block;
+    margin: 18px 0;
+  }
+  .navmenu.open {
+    right: 0;
+  }
 }

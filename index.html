@@ -1,185 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <a href="#" class="logo"><img src="./assets/images/logo.png" alt=""></a>
-        <ul class="navmenu">
-            <li><a href="#">home</a></li>
-            <li><a href="#">shop</a></li>
-            <li><a href="#">products</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-        <div class="nav-icon">
-            <a href="#"><i class='bx bx-search-alt'></i></a>
-            <a href="#"><i class='bx bx-user'></i></a>
-            <a href="#"><i class='bx bx-cart-alt'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
+      <a href="#" class="logo"><img src="./assets/images/logo.png" alt="" /></a>
+      <ul class="navmenu">
+        <li><a href="#">home</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">products</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <div class="nav-icon">
+        <a href="#"><i class="bx bx-search-alt"></i></a>
+        <a href="#"><i class="bx bx-user"></i></a>
+        <a href="#"><i class="bx bx-blog-alt"></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
     </header>
     <section class="main-home">
-        <div class="main-text">
-            <h5>Winter Collection</h5>
-            <h1>New Winter <br>Collection</h1>
-            <p>There's Nothing Like Trend</p>
-            <a href="#" class="main-btn">Shop Now <i class='bx bx-chevrons-right'></i> </a>
-        </div>
-        <div class="down-arrow">
-            <a href="#" class="down"><i class='bx bxs-chevrons-down'></i></a>
-        </div>
+      <div class="main-text">
+        <h5>Winter Collection</h5>
+        <h1>New Winter <br />Collection</h1>
+        <p>There's Nothing Like Trend</p>
+        <a href="#" class="main-btn"
+          >Shop Now <i class="bx bx-chevrons-right"></i>
+        </a>
+      </div>
+      <div class="down-arrow">
+        <a href="#" class="down"><i class="bx bxs-chevrons-down"></i></a>
+      </div>
     </section>
     <!-- Trending Product Section  -->
     <section class="trending-product" id="trending">
-        <div class="center-text">
-            <h2>Our Trending <span>Products</span></h2>
+      <div class="center-text">
+        <h2>Our Trending <span>Products</span></h2>
+      </div>
+      <div class="products">
+        <div class="row">
+          <img src="/assets/images/1.jpg" alt="" />
+          <div class="product-text">
+            <h5>Sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i><i class="bx bx-star"></i
+            ><i class="bx bx-star"></i><i class="bx bx-star"></i
+            ><i class="bx bxs-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>Half Running Set</h4>
+            <p>₺99 - ₺149</p>
+          </div>
         </div>
-        <div class="products">
-            <div class="row">
-                <img src="/assets/images/1.jpg" alt="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i
-                        class='bx bx-star'></i><i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Half Running Set</h4>
-                    <p>₺99 - ₺149</p>
-                </div>
-            </div>
-            <div class="row">
-                <img src="/assets/images/2.jpg" alt="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i
-                        class='bx bx-star'></i><i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Half Running Set</h4>
-                    <p>₺99 - ₺149</p>
-                </div>
-            </div>
-            <div class="row">
-                <img src="/assets/images/3.jpg" alt="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i
-                        class='bx bx-star'></i><i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Half Running Set</h4>
-                    <p>₺99 - ₺149</p>
-                </div>
-            </div>
-            <div class="row">
-                <img src="/assets/images/4.jpg" alt="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i
-                        class='bx bx-star'></i><i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Half Running Set</h4>
-                    <p>₺99 - ₺149</p>
-                </div>
-            </div>
-            <div class="row">
-                <img src="/assets/images/5.jpg" alt="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i
-                        class='bx bx-star'></i><i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Half Running Set</h4>
-                    <p>₺99 - ₺149</p>
-                </div>
-            </div>
-            <div class="row">
-                <img src="/assets/images/6.jpg" alt="">
-                <div class="product-text">
-                    <h5>Sale</h5>
-                </div>
-                <div class="heart-icon">
-                    <i class='bx bx-heart'></i>
-                </div>
-                <div class="ratting">
-                    <i class='bx bx-star'></i><i class='bx bx-star'></i><i class='bx bx-star'></i><i
-                        class='bx bx-star'></i><i class='bx bxs-star-half'></i>
-                </div>
-                <div class="price">
-                    <h4>Half Running Set</h4>
-                    <p>₺99 - ₺149</p>
-                </div>
-            </div>
+        <div class="row">
+          <img src="/assets/images/2.jpg" alt="" />
+          <div class="product-text">
+            <h5>Sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i><i class="bx bx-star"></i
+            ><i class="bx bx-star"></i><i class="bx bx-star"></i
+            ><i class="bx bxs-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>Half Running Set</h4>
+            <p>₺99 - ₺149</p>
+          </div>
         </div>
+        <div class="row">
+          <img src="/assets/images/3.jpg" alt="" />
+          <div class="product-text">
+            <h5>Sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i><i class="bx bx-star"></i
+            ><i class="bx bx-star"></i><i class="bx bx-star"></i
+            ><i class="bx bxs-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>Half Running Set</h4>
+            <p>₺99 - ₺149</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="/assets/images/4.jpg" alt="" />
+          <div class="product-text">
+            <h5>Sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i><i class="bx bx-star"> </i>
+            <i class="bx bx-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>Half Running Set</h4>
+            <p>₺99 - ₺149</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="/assets/images/5.jpg" alt="" />
+          <div class="product-text">
+            <h5>Sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>Half Running Set</h4>
+            <p>₺99 - ₺149</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="/assets/images/6.jpg" alt="" />
+          <div class="product-text">
+            <h5>Sale</h5>
+          </div>
+          <div class="heart-icon">
+            <i class="bx bx-heart"></i>
+          </div>
+          <div class="ratting">
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bx-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <div class="price">
+            <h4>Half Running Set</h4>
+            <p>₺99 - ₺149</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Client Reviews Section -->
     <section class="client-reviews">
-        <div class="reviews">
-            <h3 class="center-text">Client Reviews</h3>
-            <img src="/assets/images/team-1.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, illo dolores? Sit, nemo. Magnam nisi ex
-                beatae soluta sed nobis, placeat rem, quas, temporibus ad ea sint unde in distinctio incidunt libero
-                saepe cumque non veritatis?</p>
-            <h2>Mark Kuyenus</h2>
-            <p>CEO of Addle</p>
+      <div class="reviews">
+        <h3 class="center-text">Client Reviews</h3>
+        <img src="/assets/images/team-1.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, illo
+          dolores? Sit, nemo. Magnam nisi ex beatae soluta sed nobis, placeat
+          rem, quas, temporibus ad ea sint unde in distinctio incidunt libero
+          saepe cumque non veritatis?
+        </p>
+        <h2>Mark Kuyenus</h2>
+        <p>CEO of Addle</p>
+      </div>
+    </section>
+    <!-- Update News Section -->
 
+    <section class="blog">
+      <div class="blog-center-text">
+        <h2>Blog</h2>
+      </div>
+
+      <div class="update-blog">
+        <div class="blog">
+          <img src="/assets/images/bl-1.png" alt="" />
+          <h5>25 June 2023</h5>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vel
+            maiores repellat quas saepe, commodi molestiae soluta consequatur
+            ipsam perspiciatis, nulla, fugiat qui corrupti autem praesentium
+            fuga vitae accusantium necessitatibus?
+          </p>
+          <h6>Read More...</h6>
+        </div>
+        <!-- Blog Section -->
+        <div class="blog">
+          <img src="/assets/images/bl-2.png" alt="" />
+          <h5>25 June 2023</h5>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vel
+            maiores repellat quas saepe, commodi molestiae soluta consequatur
+            ipsam perspiciatis, nulla, fugiat qui corrupti autem praesentium
+            fuga vitae accusantium necessitatibus?
+          </p>
+          <h6>Read More...</h6>
         </div>
 
-
-
-
+        <div class="blog">
+          <img src="/assets/images/bl-3.png" alt="" />
+          <h5>25 June 2023</h5>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque vel
+            maiores repellat quas saepe, commodi molestiae soluta consequatur
+            ipsam perspiciatis, nulla, fugiat qui corrupti autem praesentium
+            fuga vitae accusantium necessitatibus?
+          </p>
+          <h6>Read More...</h6>
+        </div>
+      </div>
     </section>
-    <section>4</section>
-    <section>5</section>
-    <section>6</section>
-    <section>7</section>
-    <section>8</section>
-
-
+    <!-- Contact Info Section -->
+    <section class="contact">
+      <div class="contact-info">
+        <div class="first-info">
+          <img src="/assets/images/logo.png" alt="" />
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>555 555 55 55</p>
+          <p>demo@hotmail.com</p>
+          <div class="social-icon">
+            <a href="#">
+              <i class="bx bxl-facebook-circle"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="bx bxl-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="second-info">
+          <h4>Support</h4>
+          <p>Contact Us</p>
+          <p>About</p>
+          <p>Size Guide</p>
+          <p>Shipping</p>
+          <p>Privacy</p>
+        </div>
+        <div class="third-info">
+          <h4>Shop</h4>
+          <p>Men's Shopping</p>
+          <p>Women's Shopping</p>
+          <p>Kid's Shopping</p>
+          <p>Furniture</p>
+          <p>Discount</p>
+        </div>
+        <div class="fourth-info">
+          <h4>Company</h4>
+          <p>Men's Shopping</p>
+          <p>Women's Shopping</p>
+          <p>Kid's Shopping</p>
+          <p>Furniture</p>
+          <p>Discount</p>
+        </div>
+      </div>
+    </section>
 
     <script src="/script/script.js"></script>
-</body>
-
+  </body>
 </html>
