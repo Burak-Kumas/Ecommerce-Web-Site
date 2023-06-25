@@ -5,7 +5,6 @@ window.addEventListener("scroll", () => {
 });
 
 let menu = document.getElementById("menu-icon");
-
 let navmenu = document.querySelector(".navmenu");
 
 menu.onclick = () => {
@@ -13,6 +12,3 @@ menu.onclick = () => {
   navmenu.classList.toggle("open")
 };
 
-// menu.onClick = () => {
-//   menu.classList.toggle("bx-x");
-// };
