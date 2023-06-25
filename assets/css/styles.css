@@ -1,0 +1,253 @@
+:root {
+  --color-primary: #2c2c2c;
+  --color-secondary: #ee1c47;
+  --transition-duration: 0.42s;
+  --text-transform-capitalize: capitalize;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  font-family: "Jost", sans-serif;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.navmenu {
+  display: flex;
+}
+
+.navmenu a {
+  color: var(--color-primary);
+  font-size: 16px;
+  padding: 10px 20px;
+  text-transform: var(--text-transform-capitalize);
+  font-weight: 400;
+  transition: all var(--transition-duration) ease;
+}
+
+.navmenu a:hover {
+  color: var(--color-secondary);
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon i {
+  margin-right: 20px;
+  color: var(--color-primary);
+  font-size: 26px;
+  transition: all var(--transition-duration) ease;
+}
+
+.nav-icon i:hover {
+  transform: scale(1.1);
+  color: var(--color-secondary);
+}
+
+#menu-icon {
+  color: var(--color-primary);
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+section {
+  padding: 5% 10%;
+}
+
+.main-home {
+  align-items: center;
+  background-image: url(/assets/images/banner-3.png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 100vh;
+  width: 100%;
+}
+
+.main-text h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-transform: var(--text-transform-capitalize);
+}
+
+.main-text h1 {
+  font-size: 65px;
+  font-weight: 600;
+  text-transform: var(--text-transform-capitalize);
+  line-height: 1.1;
+  margin: 6px 0 10px;
+}
+.main-text p {
+  color: #333c35;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  border: 2px solid #111;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 25px;
+  text-transform: var(--text-transform-capitalize);
+  transition: all var(--transition-duration) ease;
+}
+.main-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.main-btn i {
+  vertical-align: middle;
+}
+
+.down-arrow {
+  position: absolute;
+  top: 85%;
+  right: 11%;
+}
+.down i {
+  border: 2px solid #2c2c2c;
+  border-radius: 50px;
+  font-size: 30px;
+  padding: 12px;
+  vertical-align: middle;
+}
+.down i:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all var(--transition-duration) ease;
+}
+.sticky {
+  background-color: #fff;
+  padding: 20px 10%;
+  transition: all var(--transition-duration) ease;
+}
+
+/*Trending Section*/
+.center-text {
+  color: #111;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.center-text span {
+  color: var(--color-secondary);
+}
+
+.products {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+.row {
+  position: relative;
+  transition: all 0.4s;
+}
+.row img {
+  height: auto;
+  width: 100%;
+  transition: all 0.4s;
+}
+.row img:hover {
+  transform: scale(0.9);
+}
+.product-text {
+  background-color: rgb(1, 158, 4);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 9px;
+  position: absolute;
+  top: 25px;
+  text-transform: uppercase;
+  left: 25px;
+}
+.heart-icon {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+}
+.heart-icon:hover {
+  color: var(--color-secondary);
+}
+
+.ratting {
+  color: #ff8c00;
+  font-size: 18px;
+}
+
+.price h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: var(--text-transform-capitalize);
+}
+.price p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Client Reviews Section */
+
+.client-reviews {
+  background-color: #f3f4f6;
+}
+.reviews {
+  text-align: center;
+}
+
+.reviews img {
+  border-radius: 50%;
+  height: auto;
+  width: 100px;
+  margin: 10px 0;
+}
+.reviews p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.reviews h2 {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: var(--text-transform-capitalize);
+  margin-bottom: 2px;
+}
